@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-08-24T17:27:12.750Z",
+    "end": "2021-08-24T17:27:43.996Z",
+    "duration": 31246,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "23661c46-5c60-4d6b-8f54-3a5200d5fcc1",
+      "title": "",
+      "fullFile": "cypress/integration/2-advanced-examples/homepage.spec.js",
+      "file": "cypress/integration/2-advanced-examples/homepage.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "355c3f40-79a1-4bd0-8406-821e0da20fa7",
+          "title": "HomePage_Test_Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "navigation_homepage",
+              "fullTitle": "HomePage_Test_Suite navigation_homepage",
+              "timedOut": null,
+              "duration": 27320,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//TC_01\n_HomePage.default.loadHomePage();",
+              "err": {},
+              "uuid": "8f953053-7aac-41cf-aae0-c42be4decd3c",
+              "parentUUID": "355c3f40-79a1-4bd0-8406-821e0da20fa7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "change_delivery_address",
+              "fullTitle": "HomePage_Test_Suite change_delivery_address",
+              "timedOut": null,
+              "duration": 1422,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//TC_02\n_HomePage.default.searchDeliveryAddress();",
+              "err": {},
+              "uuid": "2cbbb6a2-8e04-4af6-8693-eb096a4b9996",
+              "parentUUID": "355c3f40-79a1-4bd0-8406-821e0da20fa7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8f953053-7aac-41cf-aae0-c42be4decd3c",
+            "2cbbb6a2-8e04-4af6-8693-eb096a4b9996"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 28742,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
