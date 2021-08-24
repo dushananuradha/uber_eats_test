@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "cypress": "^8.3.0"
+  },
+  "name": "uber_eats",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "cyopen": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dushananuradha/uber_eats_test.git"
+  },
+  "keywords": [
+    "testautomation",
+    "cypress",
+    "javascript"
+  ],
+  "author": "Dushan Anuradha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dushananuradha/uber_eats_test/issues"
+  },
+  "homepage": "https://github.com/dushananuradha/uber_eats_test#readme",
+  "description": ""
+}
