@@ -3,7 +3,6 @@
 class HomePage {
     static loadHomePage(){
         cy.visit(Cypress.env('url'))
-        //cy.url().should('include', 'ubereats')
     }
 
     static searchDeliveryAddress(){
@@ -13,6 +12,12 @@ class HomePage {
                 cy.wrap($text2).click({force: true})
             }
         })
+    }
+
+    static verifyRestaturants(){
+        const value = 'main-content"]/div/div[3]/div[2]/div/div[2]/div[1]/div/section/div[2]/div[1]/li[1]'
+        assert.exists(value, 'No Data')
+        
     }
 }
 

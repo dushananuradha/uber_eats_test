@@ -11,9 +11,7 @@ class RestaurantListPage{
     }
 
     static setPriceRange(){
-        cy.get('#main-content > div > div > div.b6.cb.c8.dr.ds.dt.du.dv > div.dw.dx.ax.ag.dy > div.dz.cw > div:nth-child(2) > div:nth-child(2) > div:nth-child(5) > div > div > button:nth-child(1) > div', {timeout:20000}).then(()=>{
-            expect().click()
-        })
+        
     }
 
     static setDietaryOptions(){
@@ -24,12 +22,16 @@ class RestaurantListPage{
         })
     }
 
-    static setMaxDeliveryFee(){
+    static setMaxDeliveryFee(){ 
         cy.xpath('//*[@id="main-content"]/div/div/div[1]/div[2]/div[1]/div[2]/div[2]/div[6]/div/div/div/input', {timeout:10000}).then(()=> {
             invoke('value', '2').trigger('change')
-    })
+        })
    
-}
+    }
+
+    /* static searchRestaurantInfo(){
+        cy.get('')
+    } */
 }
 
 export default RestaurantListPage;
