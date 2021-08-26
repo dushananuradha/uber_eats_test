@@ -10,9 +10,11 @@ This is an example project using the automation tool, Cypress to test some funct
 
 #### 3. Install npm modules 
 <li> $ npm i
-
-#### 4. Install following dependecies
-<li> $ npm i cypress </br>
+  
+#### 3. Follow these instructions to install Cypress
+<li> https://docs.cypress.io/guides/getting-started/installing-cypress#Installing
+  
+#### 5. Install following dependecies
 <li> $ npm install -D cypress-xpath </br>
 <li> $ npm install --save -dev mochawesome </br>
 <li> $ npm install --save -dev mocha</br>
