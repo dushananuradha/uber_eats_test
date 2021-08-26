@@ -11,11 +11,12 @@ describe('UberEats_Test_Suite', ()=> {
     })
 
     it("change_delivery_address", ()=> {
-        //TC_02
+        //TC_02 and TC_03
         HomePage.searchDeliveryAddress();
     })
 
     it("verify restaurant data", ()=> {
+        //TC_04
         HomePage.verifyRestaturants();
     })
 
