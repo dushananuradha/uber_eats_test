@@ -1,7 +1,7 @@
-# uber_eats_test
+uber_eats_test
 
-# install npm:
+install npm:
   $ npm i
 
-# run cypress
+run cypress
   $ npm run cyopen
