@@ -23,10 +23,24 @@ class RestaurantListPage{
     }
 
     static viewModifyDeliveryAddress(){
-        cy.visit('https://www.ubereats.com/lk/feed?mod=deliveryDetails&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkNvbG9tYm8lMjAwNCUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUoxM01FSzl0YjRqb1J0R3ZYT3FCWjNTVSUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E2Ljg4NjQ3MyUyQyUyMmxvbmdpdHVkZSUyMiUzQTc5Ljg1NjI4MjYlN0Q%3D&ps=1')
+        cy.get('.lt > .fn')
         .contains('Delivery details')
     }
 
+    static viewSignIn(){
+        cy.get('#wrapper > header > div > div > div.dj.ag.dk.c1 > a')
+        .contains('Sign in')
+    }
+
+    static clickSignIn(){
+        cy.get('#wrapper > header > div > div > div.dj.ag.dk.c1 > a')
+        .click({force: true})
+    }
+
+    static directToSignInPage(){
+        cy.get('#input-label')
+        .should('contain.text', 'Sign in with your email address or mobile number.')
+    }
     /* static getSortOptions(){
         cy.xpath('//input[@id="4c7cf7ef-730f-431f-9072-26bc39f7c023"]').click({force: true}).should('have.value', '  Most popular')
     }

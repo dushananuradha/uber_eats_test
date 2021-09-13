@@ -24,3 +24,15 @@ Then ('I should see a pop-up window, with the heading of "Delivery details"', ()
     RestaurantListPage.viewModifyDeliveryAddress()
 })
 
+
+Given ('I should see \'sign in\' label in Uber Eats restaurants list page', ()=>{
+    RestaurantListPage.viewSignIn()
+})
+
+When ('I click on \'sign in\' link', ()=>{
+    RestaurantListPage.clickSignIn()
+})
+
+Then ('I should be directed to a new web page containing the text of \'Sign in with your email address or mobile number.\'', ()=>{
+    RestaurantListPage.directToSignInPage()
+})
