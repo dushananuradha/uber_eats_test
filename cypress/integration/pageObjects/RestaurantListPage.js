@@ -2,11 +2,32 @@
 
 class RestaurantListPage{
 
-    static getListPage(){
+    static getRestaurantListPage(){
         cy.visit('https://www.ubereats.com/lk/feed?pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkNvbG9tYm8lMjAwNCUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUoxM01FSzl0YjRqb1J0R3ZYT3FCWjNTVSUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E2Ljg4NjQ3MyUyQyUyMmxvbmdpdHVkZSUyMiUzQTc5Ljg1NjI4MjYlN0Q%3D')
     }
 
-    static getSortOptions(){
+    static confirmRestaurantListPage(){
+        cy.get('#wrapper > header > div > div > a.cc.cd.ce.cf.cg.b3.ch.ci.cj.ck.cl.ag.as.c1.c5.cm.cn.b6 > div.cq.an.al')
+            .contains('Colombo 04')
+            .log('Successfully landed')
+    }
+
+    static viewDeliveryAddress() {
+        cy.get('#wrapper > header > div > div > a.cc.cd.ce.cf.cg.b3.ch.ci.cj.ck.cl.ag.as.c1.c5.cm.cn.b6 > div.cq.an.al')
+            .contains('Colombo 04')
+    }
+
+    static clickToModifyDeliveryAddress(){
+        cy.get('#wrapper > header > div > div > a.cc.cd.ce.cf.cg.b3.ch.ci.cj.ck.cl.ag.as.c1.c5.cm.cn.b6 > div.cq.an.al')
+        .click({force:true})
+    }
+
+    static viewModifyDeliveryAddress(){
+        cy.visit('https://www.ubereats.com/lk/feed?mod=deliveryDetails&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkNvbG9tYm8lMjAwNCUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUoxM01FSzl0YjRqb1J0R3ZYT3FCWjNTVSUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E2Ljg4NjQ3MyUyQyUyMmxvbmdpdHVkZSUyMiUzQTc5Ljg1NjI4MjYlN0Q%3D&ps=1')
+        .contains('Delivery details')
+    }
+
+    /* static getSortOptions(){
         cy.xpath('//input[@id="4c7cf7ef-730f-431f-9072-26bc39f7c023"]').click({force: true}).should('have.value', '  Most popular')
     }
 
@@ -29,9 +50,12 @@ class RestaurantListPage{
    
     }
 
-    /* static searchRestaurantInfo(){
-        cy.get('')
-    } */
+    static searchTitles(){
+        cy.get('#main-content > div > div.b6.ag.dy.dz.e0.e1 > div.b6.cb.c8.f0.e3.e4.e5.e6 > div > div.fx.j1.fz.g0.g1.g2 > div:nth-child(1) > div > section > div.e5.ag.e8.c1.af > div:nth-child(1) > div')
+        .focus()
+    }  */
 }
+
+// #main-content > div > div.b6.ag.dy.dz.e0.e1 > div.b6.cb.c8.f0.e3.e4.e5.e6 > div > div.fx.j1.fz.g0.g1.g2 > div:nth-child(1) > div > section > div.e5.ag.e8.c1.af > div:nth-child(1) > div
 
 export default RestaurantListPage;

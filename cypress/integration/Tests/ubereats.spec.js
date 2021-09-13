@@ -15,13 +15,12 @@ describe('UberEats_Test_Suite', ()=> {
         HomePage.searchDeliveryAddress();
     })
 
-    it("verify_restaurant_data", ()=> {
+    it.skip("verify_restaurant_data", ()=> {
         //refer TC_04
         HomePage.verifyRestaturants();
     })
 
-    /* it.skip("sorting restaurant", ()=>{
-        //TC_03
+     it.skip("sorting restaurant", ()=>{
         RestaurantListPage.getListPage();
         RestaurantListPage.getSortOptions();
     })
@@ -34,10 +33,10 @@ describe('UberEats_Test_Suite', ()=> {
         RestaurantListPage.setDietaryOptions();
     })
 
-    it.skip("set maximum delivery fee for ordered food items", ()=> {
+    it("focus at titles", ()=> {
        //TC_05
-        RestaurantListPage.setMaxDeliveryFee();
-    }) */
+        RestaurantListPage.searchTitles();
+    }) 
 
 
 })
