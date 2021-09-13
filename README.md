@@ -11,7 +11,7 @@ This is an example project using the automation tool, Cypress to test some funct
 #### 3. Install npm modules 
 <li> $ npm i
   
-#### 3. Follow these instructions to install Cypress
+#### 4. Follow these instructions to install Cypress
 <li> https://docs.cypress.io/guides/getting-started/installing-cypress#Installing
   
 #### 5. Install following dependecies
