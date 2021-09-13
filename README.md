@@ -1,4 +1,4 @@
-## Example-test-automation-project-on https://www.ubereats.com/lk with-Cypress 
+## Example-test-automation-project-on https://www.ubereats.com/lk with-Cypress using Page Object Model and BDD styles
 
 This is an example project using the automation tool, Cypress to test some functionalities of https://www.ubereats.com/lk.
 
